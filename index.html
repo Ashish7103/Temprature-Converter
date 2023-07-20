@@ -1,0 +1,77 @@
+<!--  to generate a temprateure converter application -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
+
+    <title>Temprature Converter</title>
+  </head>
+  <body>
+    <!--  container  -->
+    <div class="container">
+      <!-- box-1 -->
+      <div class="box_1">
+        <h1>Enter Temprature</h1>
+
+        <div class="degree">
+          <label> Degree</label><br />
+          <input type="number" class="input_temp" />
+          <select id="select1">
+            <option
+              value="Celsius"
+              class="standard__1__C standard__1"
+              selected="selected"
+            >
+              °C
+            </option>
+            <option value="Fahrenheit" class="standard__1__F standard__1">
+              °F
+            </option>
+          </select>
+        </div>
+
+        <div class="convertIn">
+          <label> Convert In</label><br />
+          <select id="select2">
+            <option
+              value="Fahrenheit"
+              class="standard__2__F standard__2"
+              selected="selected"
+            >
+              °F
+            </option>
+            <option value="Celsius" class="standard__2__C standard__2">
+              °C
+            </option>
+          </select>
+        </div>
+
+        <button class="buttonToConvert">convert &rarr;</button>
+      </div>
+
+      <div class="box_2">
+        <!--  box-2 -->
+        <textarea class="output_temp" id="output" >
+          
+        </textarea>
+      </div>
+    </div>
+
+    <div class="alert">
+      <h1>
+        Rotate your Device to use temprature converter
+        <img
+          width="50"
+          height="50"
+          src="https://img.icons8.com/ios/50/rotate-screen.png"
+          alt="rotate-screen"
+        />
+      </h1>
+    </div>
+
+    <script defer src="script.js"></script>
+  </body>
+</html>
